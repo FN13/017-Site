@@ -1,0 +1,78 @@
+/* Estilos para o corpo da página */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Estilos para o cabeçalho */
+header {
+  background-color: #3d5764;
+  padding: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px;
+}
+
+..header-title {
+  text-align: center;
+}
+
+.header-nav {
+  display: flex;
+  gap: 10px;  /* Espaço entre os botões */
+}
+
+.header-nav {
+  display: flex;
+  gap: 15px;  /* Espaço entre os botões */
+}
+
+.header-nav button {
+  background-color: #3d5764;  /* Cor de fundo */
+  color: #feffaf;  /* Cor do texto */
+  border: 2px solid #feffaf;  /* Borda para destaque */
+  border-radius: 5px;  /* Bordas arredondadas */
+  padding: 10px 20px;  /* Espaçamento interno */
+  text-transform: uppercase;  /* Texto em maiúsculas */
+  font-size: 1em;  /* Tamanho do texto */
+  font-family: 'Monoton', sans-serif;  /* Fonte para combinar com o cabeçalho */
+  cursor: pointer;  /* Indica que é clicável */
+  transition: all 0.3s ease;  /* Efeito suave */
+}
+
+.header-nav button:hover {
+  background-color: #5a7a89;  /* Cor ao passar o mouse */
+  border-color: white;  /* Cor da borda ao passar o mouse */
+  color: white;  /* Cor do texto ao passar o mouse */
+}
+/* Estilos para o conteúdo */
+.content {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  color: #3d5764;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #3d5764;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
