@@ -1,154 +1,54 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;  /* Garante que a página ocupe toda a altura do viewport */
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
 }
 
-.page-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;  /* Mantém layout vertical */
+.navbar-brand img {
+    max-width: 150px;
+    height: auto;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;  /* Ajusta para adicionar navegação */
-  align-items: center;
-  padding: 20px;
-  background-color: #3d5764;  /* Cor do cabeçalho */
-  color: white;
-}
-
-.logo {
-  width: 100px;  /* Espaço para a logomarca */
-}
-
-.logo img {
-  width: 100%;  /* Mantém a logo responsiva */
-}
-
-.header-title {
-  text-align: center;
-}
-
-.header-nav {
-  display: flex;
-  gap: 10px;  /* Espaço entre os botões */
-}
-
-.header-nav {
-  display: flex;
-  gap: 15px;  /* Espaço entre os botões */
-}
-
-.header-nav button {
-  background-color: #3d5764;  /* Cor de fundo */
-  color: #feffaf;  /* Cor do texto */
-  border: 2px solid #feffaf;  /* Borda para destaque */
-  border-radius: 5px;  /* Bordas arredondadas */
-  padding: 10px 20px;  /* Espaçamento interno */
-  text-transform: uppercase;  /* Texto em maiúsculas */
-  font-size: 1em;  /* Tamanho do texto */
-  font-family: 'Monoton', sans-serif;  /* Fonte para combinar com o cabeçalho */
-  cursor: pointer;  /* Indica que é clicável */
-  transition: all 0.3s ease;  /* Efeito suave */
-}
-
-.header-nav button:hover {
-  background-color: #5a7a89;  /* Cor ao passar o mouse */
-  border-color: white;  /* Cor da borda ao passar o mouse */
-  color: white;  /* Cor do texto ao passar o mouse */
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: bold;
 }
 
 .content {
-  flex: 1;
-  display: flex;
-  justify-content: space-between;  /* Espaço entre elementos */
-  padding: 20px;
-  background-color: #feffaf;
+    margin-top: 40px;
 }
 
 .about-us {
-  flex: 1;
-  padding: 20px;  /* Espaçamento interno */
-  background-color: #5a7a89;  /* Cor de fundo */
-  color: #000000;  /* Cor do texto para bom contraste */
-  font-size: 1.2em;  /* Tamanho do texto */
-  line-height: 1.6;  /* Espaçamento entre linhas */
-  font-family: Arial, sans-serif;  /* Fonte padrão */
-  border-radius: 10%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.about-us h2 {
-  color: #3d5764;  /* Cor do cabeçalho */
-  font-size: 2em;  /* Tamanho do título */
+.titulo2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .about-us p {
-  margin: 10px 0;  /* Espaço entre parágrafos */
+    color: #666;
 }
 
-.carousel {
-  position: relative;
-  overflow: hidden;
-  flex: 1;  /* O carrossel ocupa a outra metade do espaço */
-  max-height: 90vh;  /* Limita a altura do carrossel */
-  background-color: #feffaf;
-  max-width: 620;
-  margin-left: 25%;
-}
-
-.carousel-images {
-  display: flex;
-  transition: transform 0.5s ease-in-out;  /* Animação suave para o carrossel */
-}
-
-.carousel-image {
-  min-width: 100%; 
-  box-sizing: border-box;
-}
-
-.carousel-image img {
-  width: 50%;  /* Mantém a largura das imagens */
-  height: auto;  /* Mantém a proporção correta */
-}
-
-.carousel-button {
-  position: absolute;
-  top: 50%;  /* Centraliza verticalmente os botões do carrossel */
-  transform: translateY(-50%);  /* Ajusta a posição para centralizar */
-  background-color: rgba(61, 87, 100, 0.5);  /* Transparência para destaque */
-  color: white;  /* Contraste para os botões */
-  border: none;
-  cursor: pointer;
-  font-size: 1.5em;
-}
-
-.carousel-button.prev {
-  left: 10px;  /* Posição do botão anterior */
-}
-
-.carousel-button.next {
-  right: 460px;  /* Posição do botão seguinte */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
 }
 
 footer {
-  background-color: #3d5764;  /* Cor do rodapé */
-  color: white;  /* Contraste para o texto */
-  text-align: center;
-  padding: 10px;
+    margin-top: 40px;
+    text-align: center;
+    color: #666;
 }
 
-.monoton-regular {
-  font-family: "Monoton", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #feffaf;
-}
-
-.titulo2{
-  color: #000000;
-}
