@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura mínima da viewport */
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+}
+
+.navbar {
+    background-color: #000000;
+    color: white;
+}
+.container-logo{
+    padding-left:100px ;
+}
+.navbar-brand img {
+    height: 160px; /* Ajuste conforme necessário */
+    margin-right: 10px;
+    border-radius: 50%;
+    padding-left: 5px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important; /* Cor do texto dos links da navbar */
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107 !important; /* Cor do texto ao passar o mouse */
+}
+
+.content {
+    flex: 1; /* Ocupa todo o espaço disponível */
+    padding: 20px; /* Espaçamento interno geral */
+}
+
+.about-us {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.titulo2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.carousel-inner img {
+    width: 100%; /* Ajuste conforme necessário */
+    height: auto;
+}
+
+.event-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event {
+    margin-bottom: 20px;
+}
+
+.event h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.event p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.center {
+    text-align: center;
+}
+
+.imagem {
+    width: 100%; /* Ajuste conforme necessário */
+    max-width: 500px; /* Limita a largura máxima */
+    height: auto;
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+.carousel-img-small {
+    max-height: 900px;
+    object-fit: cover;
+}
+
+/* Estilos para a seção "Sobre Nós" */
+.sobre-nos {
+    margin-top: 60px; /* Aumenta o espaço acima da seção */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f8f9fa; /* Cor de fundo */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: flex; /* Display flex para alinhar conteúdo */
+    flex-direction: row; /* Direção da flexbox */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+}
+
+.sobre-nos .titulo2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sobre-nos .descricao {
+    color: #666;
+    line-height: 1.6;
+    text-align: justify;
+    margin-right: 20px; /* Espaçamento à direita do texto */
+    flex: 1; /* Cresce para ocupar espaço restante */
+}
+
+.sobre-nos .imagem {
+    width: 200px; /* Largura fixa da imagem */
+    height: 200px; /* Altura fixa da imagem */
+    border-radius: 50%; /* Transforma a imagem em um círculo */
+    margin-left: 20px; /* Espaçamento à esquerda da imagem */
+    object-fit: cover; /* Ajusta o tamanho da imagem */
+}
+
+/* Estilos para a seção "Depoimentos" */
+.testimonials {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials .titulo2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimonials .card {
+    border: none;
+    background-color: transparent;
+}
+
+.testimonials .card-text {
+    font-style: italic;
+    color: #666;
+}
+
+.testimonials .blockquote-footer {
+    margin-top: 15px;
+    color: #999;
+}
+
+/* Estilos para o footer global */
+.footer-global {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Faz o footer ficar no final da página */
+}
+
+/* Estilos para os botões de redes sociais no footer global */
+.footer-global .btn-social {
+    margin: 10px;
+    text-decoration: none;
+    font-size: 24px; /* Tamanho do ícone */
+    width: 50px; /* Largura mínima para o botão */
+    height: 50px; /* Altura mínima para o botão */
+    border-radius: 50%; /* Botão circular */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-global .btn-social i {
+    line-height: 0; /* Ajusta linha de base para o ícone */
+}
+
+@media (max-width: 576px) {
+    .social-icons {
+        text-align: center;
+    }
+
+    .btn-social {
+        display: inline-block;
+        margin: 10px auto;
+    }
+}
